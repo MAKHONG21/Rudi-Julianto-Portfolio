@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rudi Julianto Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f6f7fa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .header-section {
+      background: linear-gradient(90deg, #21395b 70%, #2980b9 100%);
+      color: #fff;
+      border-bottom: 5px solid #68a4e7;
+      padding: 36px 24px 14px 24px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      min-height: 100px;
+    }
+    .header-title-container {
+      flex: 1 1 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      order: 2;
+    }
+    .header-title {
+      font-size: 2rem;
+      letter-spacing: 1px;
+      margin: 0;
+      line-height: 1.2;
+    }
+    .subtitle {
+      font-size: 1.12rem;
+      color: #bed6fc;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      margin-top: 6px;
+      line-height: 1.3;
+    }
+    .contact-topbar {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      flex-shrink: 0;
+      order: 1;
+      margin-left: auto;
+    }
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 8px rgba(52, 96, 184, 0.12);
+      border: 1.4px solid #e6eefa;
+      color: #246bc2;
+      cursor: pointer;
+      transition: background 0.15s, border 0.14s;
+      text-decoration: none;
+    }
+    .contact-link:hover {
+      background: #e1eefc;
+      border-color: #b2d5f9;
+    }
+    .contact-icon {
+      width: 22px;
+      height: 22px;
+      display: block;
+    }
+    .container {
+      max-width: 850px;
+      margin: 38px auto 32px auto;
+      background: #fff;
+      padding: 34px 24px 18px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(40, 72, 131, 0.10);
+    }
+    .project-card {
+      margin-bottom: 38px;
+      background: #f9fafd;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(40,72,131,0.06);
+      padding: 22px 26px 28px 26px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 26px;
+    }
+    .project-image {
+      width: 210px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #e6eefa;
+      box-shadow: 0 2px 12px rgba(40,72,131,0.10);
+      background: #eaeaea;
+      flex-shrink: 0;
+    }
+    .project-info {
+      flex: 1 1 240px;
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-title {
+      font-size: 1.25rem;
+      color: #264883;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .project-desc {
+      color: #25344a;
+      font-size: 1.04rem;
+      margin-bottom: 14px;
+    }
+    .view-btn {
+      display: inline-block;
+      padding: 9px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      background: #2980b9;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.16s;
+      box-shadow: 0 1px 4px rgba(40,72,131,0.03);
+      margin-top: 8px;
+      max-width: fit-content;
+    }
+    .view-btn:hover {
+      background: #1864a3;
+      color: #f0f4f7;
+    }
+    @media (max-width: 650px) {
+      .container {
+        padding: 14px 2vw;
+      }
+      .header-section {
+        justify-content: center;
+        min-height: auto;
+      }
+      .contact-topbar {
+        order: 2;
+        margin: 12px 0 0 0;
+      }
+      .header-title-container {
+        order: 1;
+        flex: 1 auto;
+      }
+      .project-card {
+        flex-direction: column;
+        padding: 18px 10px 18px 10px;
+      }
+      .project-image {
+        width: 100%;
+        max-width: 285px;
+        margin-bottom: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header-section">
+    <div class="header-title-container">
+      <h1 class="header-title">RUDI JULIANTO PORTFOLIO</h1>
+      <div class="subtitle">Data Analyst well served in Excel/GSheets, Python, RStudio, Looker Studio, SQL</div>
+    </div>
+    <div class="contact-topbar">
+      <a class="contact-link" href="http://wa.me/6285313905499" target="_blank" aria-label="WhatsApp">
+        <img class="contact-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+      </a>
+      <a class="contact-link" href="mailto:rjuliantooo.21@gmail.com" aria-label="Email">
+        <img class="contact-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email" />
+      </a>
+      <a class="contact-link" href="https://www.linkedin.com/in/rudijulianto" target="_blank" aria-label="LinkedIn">
+        <img class="contact-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <!-- Project cards -->
+    <div class="project-card">
+      <img class="project-image" src="resto.png" alt="Restaurant Order Analysis" />
+      <div class="project-info">
+        <div>
+          <div class="project-title">Restaurant Order Analysis (MySQL)</div>
+          <div class="project-desc">
+            In this project we use customer data to identify which menu items are performing well or not, and to determine the top customers' favorite items as well as analyze overall customer behavior.
+          </div>
+        </div>
+        <a class="view-btn" href="https://colab.research.google.com/drive/1xPTT6lp9-uO7h2Lti-Qqar0Je_lRqCQS?authuser=0#scrollTo=gjKGF_QXH1WH" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="project-image" src="looker.jpg" alt="Advertising Expenditure Dashboard" />
+      <div class="project-info">
+        <div>
+          <div class="project-title">Advertising Expenditure (Looker Studio)</div>
+          <div class="project-desc">
+            Looker Studio Dashboard that summarizes advertising expenditure data for conventional media channels and provides insights to all stakeholders.
+          </div>
+        </div>
+        <a class="view-btn" href="https://lookerstudio.google.com/reporting/daa2ad67-47e4-4db3-93d1-a6ed84b24d61/page/p_zayurvwm9c" target="_blank" rel="noopener noreferrer">View Dashboard</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="project-image" src="predictive-model.jpg" alt="Predictive Model - Python" />
+      <div class="project-info">
+        <div>
+          <div class="project-title">Predictive Model (Python)</div>
+          <div class="project-desc">
+            Developed time series models (ARIMA, Exponential Smoothing, etc.) for channel metric prediction and forecasting trend insights for business planning.
+          </div>
+        </div>
+        <a class="view-btn" href="https://colab.research.google.com/drive/19ScoAKcSWlyjbuIBF0gSYaBSt8mTzpOU?usp=sharing#scrollTo=rgJMILHENegU" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="project-image" src="text-analysis.jpg" alt="Text Analysis" />
+      <div class="project-info">
+        <div>
+          <div class="project-title">Text Analysis (Python)</div>
+          <div class="project-desc">
+            Text analysis to discover popular keywords and user demographic patterns using natural language processing techniques in Python.
+          </div>
+        </div>
+        <a class="view-btn" href="https://colab.research.google.com/drive/1Py_dwRCYPfgZTVa4NBXxA1camaKLskQl?usp=sharing" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="project-image" src="diabetes-problem.jpg" alt="Diabetes Problem" />
+      <div class="project-info">
+        <div>
+          <div class="project-title">Diabetes Problem (Python)</div>
+          <div class="project-desc">
+            Random Forest classification model predicting diabetes from over 100k medical records, improving early detection with machine learning.
+          </div>
+        </div>
+        <a class="view-btn" href="https://colab.research.google.com/drive/1PCW0DtriD7WY2Hk8rrQHVtPxyQj0lpS2#scrollTo=aDvzgzTVWBGP" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="project-image" src="apple-stock-prediction.jpg" alt="Predicting Apple Stock Price" />
+      <div class="project-info">
+        <div>
+          <div class="project-title">Predicting Apple Stock Price (Python)</div>
+          <div class="project-desc">
+            Predicted Apple stock price using 5 machine learning models based on over 10,000 observations in Python and scikit-learn.
+          </div>
+        </div>
+        <a class="view-btn" href="https://colab.research.google.com/drive/1hd6Tg-Z4xeRqcDuOtI7NC5idkJf9O_iE?usp=sharing" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="project-image" src="titanic-survival.jpg" alt="Titanic Survival Problem" />
+      <div class="project-info">
+        <div>
+          <div class="project-title">Titanic Survival Problem (Python)</div>
+          <div class="project-desc">
+            Built 9 predictive models for Titanic passenger survival classification (Logistic Regression, SVM, KNN, and more).
+          </div>
+        </div>
+        <a class="view-btn" href="https://colab.research.google.com/drive/1nfGSYZkJUkt-NxbFt5wM4jC3SCbK5b-C?usp=sharing#scrollTo=GTOMkQTwfV09" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img class="project-image" src="card-game.jpg" alt="Card Game Project" />
+      <div class="project-info">
+        <div>
+          <div class="project-title">Card Game (Python)</div>
+          <div class="project-desc">
+            Created an interactive digital card game for 4 players using Python OOP and random library.
+          </div>
+        </div>
+        <a class="view-btn" href="https://colab.research.google.com/drive/1m4MUjtclZNJ0czIJqpNUJCDCeLpbNdYj?pli=1#scrollTo=BdXyH2u-w0kH" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
